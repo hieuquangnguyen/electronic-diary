@@ -36,7 +36,7 @@
   margin-bottom: 0px;
 }
 .NavMenuCustom {
-  font-size: 17px;
+  font-size: 17px !important;
   font-weight: 500;
   color: #ebf669;
 }
@@ -45,9 +45,7 @@
   text-decoration: none;
   padding: 10px;
 }
-.NavMenuCustom {
-  font-size: 20px;
-}
+
 .NavMenuCustom:hover {
   color: white;
 }
