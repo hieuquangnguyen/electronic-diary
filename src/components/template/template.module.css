@@ -97,7 +97,7 @@
   text-decoration: none;
 }
 .menuF {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 700;
 }
 .ColContactFooter {
@@ -128,7 +128,7 @@
     padding-left: 0px;
   }
   .titleNKTN h5 {
-    font-size: 15px;
+    font-size: 17px;
   }
   .rowFooter {
     flex-direction: column;
