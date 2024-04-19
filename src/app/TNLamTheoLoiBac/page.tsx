@@ -7,7 +7,16 @@ import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import DiaryItem from "@/data/diaryData/page";
 
+import React, { useState } from "react";
 const NKLamTheoLoiBac: React.FC = () => {
+  // Tạo một state để lưu trữ postIdToOpen
+  const [postIdToOpen, setPostIdToOpen] = useState<string>("1");
+
+  // Thiết lập giá trị cho postIdToOpen, chẳng hạn khi người dùng chọn một bài viết cụ thể
+  const handlePostClick = (postId: string) => {
+    setPostIdToOpen(postId);
+  };
+
   // tạo một mảng posts
   const posts = [
     // dữ liệu bài nhât kí 1
@@ -69,13 +78,14 @@ const NKLamTheoLoiBac: React.FC = () => {
             </div>
             <div className={css.coverListNhatKi}>
               <div id="modal-root">
-                <Accordion defaultActiveKey={"0"}>
+                <Accordion defaultActiveKey={postIdToOpen}>
                   {posts.map((post, index) => (
                     // Nhật kí số 1
                     <Accordion.Item
                       eventKey={index.toString()}
                       id={`post${post.id}`}
                       key={post.id}
+                      onClick={() => handlePostClick(post.id)} // Gọi hàm handlePostClick khi bài viết được click
                     >
                       <Accordion.Header>{post.title}</Accordion.Header>
 
