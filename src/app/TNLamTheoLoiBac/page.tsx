@@ -79,10 +79,10 @@ const NKLamTheoLoiBac: React.FC = () => {
             <div className={css.coverListNhatKi}>
               <div id="modal-root">
                 <Accordion defaultActiveKey={postIdToOpen}>
-                  {posts.map((post, index) => (
+                  {posts.map((post) => (
                     // Nhật kí số 1
                     <Accordion.Item
-                      eventKey={index.toString()}
+                      eventKey={post.id}
                       id={`post${post.id}`}
                       key={post.id}
                       onClick={() => handlePostClick(post.id)} // Gọi hàm handlePostClick khi bài viết được click
