@@ -9,8 +9,14 @@ import DiaryItem from "@/data/diaryData/page";
 import { useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { useCommonStore } from "@/stores/common";
+import Form from "react-bootstrap/Form";
+import { usePathname } from "next/navigation";
 
 const NKLamTheoLoiBac: React.FC = () => {
+  // xử lí search
+  const pathname = usePathname();
+  const { search } = useCommonStore();
+
   const searchParams = useSearchParams();
   // Tạo một state để lưu trữ postIdToOpen
   const [postIdToOpen, setPostIdToOpen] = useState<string>("1");
@@ -211,6 +217,18 @@ const NKLamTheoLoiBac: React.FC = () => {
             <div className={css.headerPage}>
               <h3>NHẬT KÍ THANH NIÊN LÀM THEO LỜI BÁC</h3>
             </div>
+            <div>
+              <Form className="d-flex">
+                <Form.Control
+                  type="search"
+                  placeholder="Tìm Kiếm Nhật Kí Theo Tên Tiêu Đề Tại Đây"
+                  className="me-2"
+                  aria-label="Search"
+                  onChange={(event) => search(event.target.value)}
+                />
+              </Form>
+            </div>
+
             <div className={css.coverListNhatKi}>
               <div id="modal-root">
                 <Accordion key={postIdToOpen} defaultActiveKey={postIdToOpen}>

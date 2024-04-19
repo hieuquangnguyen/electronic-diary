@@ -14,12 +14,13 @@ import Button from "react-bootstrap/Button";
 import Link from "next/link";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { usePathname } from "next/navigation";
-import { useCommonStore } from "@/stores/common";
+// import { useCommonStore } from "@/stores/common";
 
 export default function Template({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const { search } = useCommonStore();
-  console.log("pathname", pathname);
+  // const { search } = useCommonStore();
+  // console.log("pathname", pathname);
+
   return (
     <Container className={css.container}>
       {/* ảnh Nhat ki va Nhat Ki Thanh Nien Duy Son */}
@@ -108,17 +109,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
 
       {/* row content */}
       <Row className={css.rowContent}>
-        <Row>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Tìm Kiếm Nhật Kí Theo Tên Tiêu Đề Tại Đây"
-              className="me-2"
-              aria-label="Search"
-              onChange={(event) => search(event.target.value)}
-            />
-          </Form>
-        </Row>
+        
         {children}
         {/* hiển thị nội dung của các page ở đây */}
       </Row>
