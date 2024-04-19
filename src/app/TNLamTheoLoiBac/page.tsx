@@ -8,6 +8,7 @@ import ButtonGroup from "react-bootstrap/ButtonGroup";
 import DiaryItem from "@/data/diaryData/page";
 
 import React, { useState } from "react";
+
 const NKLamTheoLoiBac: React.FC = () => {
   // Tạo một state để lưu trữ postIdToOpen
   const [postIdToOpen, setPostIdToOpen] = useState<string>("1");
@@ -54,15 +55,22 @@ const NKLamTheoLoiBac: React.FC = () => {
     },
   ];
 
-  function getPostUrl(postId: string, postUrl: string) {
-    return `${postUrl}/${postId}`;
+  function getPostUrl(postId: string) {
+    const baseUrl =
+      "https://nhat-ki-dien-tu-thanh-nien.vercel.app/TNLamTheoLoiBac";
+    return `${baseUrl}#post${postId}`; // Append post ID to the URL
   }
 
-  function shareToFacebook(postId: string, postUrl: string) {
-    const url = getPostUrl(postId, postUrl);
+  // function getPostUrl(postId: string, postUrl: string) {
+  //   return `${postUrl}/${postId}`;
+  // }
+
+  function shareToFacebook(postId: string) {
+    const url = getPostUrl(postId);
+    const encodedUrl = encodeURIComponent(url); // Encode URL for safe sharing
 
     window.open(
-      `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
+      `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
       "_blank",
       "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400"
     );
@@ -104,13 +112,7 @@ const NKLamTheoLoiBac: React.FC = () => {
                           <ButtonGroup aria-label="Basic example">
                             <Button
                               variant="success"
-                              onClick={() =>
-                                shareToFacebook(
-                                  post.id,
-                                  "https://nhat-ki-dien-tu-thanh-nien.vercel.app/TNLamTheoLoiBac#post" +
-                                    post.id
-                                )
-                              }
+                              onClick={() => shareToFacebook(post.id)}
                             >
                               <b>Chia Sẻ Facebook</b>
                             </Button>
