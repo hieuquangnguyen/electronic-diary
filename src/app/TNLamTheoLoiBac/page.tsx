@@ -66,7 +66,7 @@ const NKLamTheoLoiBac: React.FC = () => {
   // }
 
   function shareToFacebook(postId: string) {
-    const url = getPostUrl(postId);
+    const url = getPostUrl(postId); // Get the post URL
     const encodedUrl = encodeURIComponent(url); // Encode URL for safe sharing
 
     window.open(
@@ -74,6 +74,9 @@ const NKLamTheoLoiBac: React.FC = () => {
       "_blank",
       "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400"
     );
+
+    // Update state to set the defaultActiveKey to the shared post ID
+    setPostIdToOpen(postId);
   }
 
   return (
