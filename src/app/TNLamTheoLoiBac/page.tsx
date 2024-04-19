@@ -61,10 +61,6 @@ const NKLamTheoLoiBac: React.FC = () => {
     return `${baseUrl}#post${postId}`; // Append post ID to the URL
   }
 
-  // function getPostUrl(postId: string, postUrl: string) {
-  //   return `${postUrl}/${postId}`;
-  // }
-
   function shareToFacebook(postId: string) {
     const url = getPostUrl(postId); // Get the post URL
     const encodedUrl = encodeURIComponent(url); // Encode URL for safe sharing
@@ -89,7 +85,7 @@ const NKLamTheoLoiBac: React.FC = () => {
             </div>
             <div className={css.coverListNhatKi}>
               <div id="modal-root">
-                <Accordion defaultActiveKey={postIdToOpen}>
+                <Accordion key={postIdToOpen} defaultActiveKey={postIdToOpen}>
                   {posts.map((post) => (
                     // Nhật kí số 1
                     <Accordion.Item
