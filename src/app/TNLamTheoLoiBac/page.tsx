@@ -6,12 +6,26 @@ import css from "@/styles/TNLamTheoLoiBac.module.css";
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import DiaryItem from "@/data/diaryData/page";
-
-import React, { useState } from "react";
+import { useSearchParams } from "next/navigation";
+import React, { useEffect, useState } from "react";
+import { useCommonStore } from "@/stores/common";
 
 const NKLamTheoLoiBac: React.FC = () => {
+  const searchParams = useSearchParams();
   // Tạo một state để lưu trữ postIdToOpen
   const [postIdToOpen, setPostIdToOpen] = useState<string>("1");
+  const { keywords } = useCommonStore();
+
+  useEffect(() => {
+    const postId = searchParams.get("postId");
+    if (postId) {
+      setPostIdToOpen(postId);
+    }
+  }, []);
+
+  useEffect(() => {
+    document.getElementById(`post${postIdToOpen}`)?.scrollIntoView();
+  }, [postIdToOpen]);
 
   // Thiết lập giá trị cho postIdToOpen, chẳng hạn khi người dùng chọn một bài viết cụ thể
   const handlePostClick = (postId: string) => {
@@ -170,7 +184,7 @@ const NKLamTheoLoiBac: React.FC = () => {
   function getPostUrl(postId: string) {
     const baseUrl =
       "https://nhat-ki-dien-tu-thanh-nien.vercel.app/TNLamTheoLoiBac";
-    return `${baseUrl}#post${postId}`; // Append post ID to the URL
+    return `${baseUrl}?postId=${postId}}`; // Append post ID to the URL
   }
 
   function shareToFacebook(postId: string) {
@@ -186,6 +200,8 @@ const NKLamTheoLoiBac: React.FC = () => {
     // Update state to set the defaultActiveKey to the shared post ID
     setPostIdToOpen(postId);
   }
+  // lọc search
+  const filteredPosts = posts.filter((post) => post.title.includes(keywords));
 
   return (
     <>
@@ -198,7 +214,7 @@ const NKLamTheoLoiBac: React.FC = () => {
             <div className={css.coverListNhatKi}>
               <div id="modal-root">
                 <Accordion key={postIdToOpen} defaultActiveKey={postIdToOpen}>
-                  {posts.map((post) => (
+                  {filteredPosts.map((post) => (
                     // Nhật kí số 1
                     <Accordion.Item
                       eventKey={post.id}

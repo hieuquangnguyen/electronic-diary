@@ -13,8 +13,13 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Link from "next/link";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import { usePathname } from "next/navigation";
+import { useCommonStore } from "@/stores/common";
 
 export default function Template({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+  const { search } = useCommonStore();
+  console.log("pathname", pathname);
   return (
     <Container className={css.container}>
       {/* ảnh Nhat ki va Nhat Ki Thanh Nien Duy Son */}
@@ -64,28 +69,35 @@ export default function Template({ children }: { children: React.ReactNode }) {
                   </Offcanvas.Header>
                   <Offcanvas.Body>
                     <Nav className="justify-content-end flex-grow-1 pe-3">
-                      <Link href="/" className={css.NavMenuCustom}>
+                      <Link
+                        style={{
+                          color: pathname === "/" ? "red" : "white",
+                        }}
+                        href="/"
+                        className={css.NavMenuCustom}
+                      >
                         Trang Chủ
                       </Link>
                       <Link
+                        style={{
+                          color:
+                            pathname === "/TNLamTheoLoiBac" ? "red" : "white",
+                        }}
                         href="/TNLamTheoLoiBac"
                         className={css.NavMenuCustom}
                       >
                         Thanh Niên Làm Theo Lời Bác
                       </Link>
-                      <Link href="/TNTinhNguyen" className={css.NavMenuCustom}>
+                      <Link
+                        style={{
+                          color: pathname === "/TNTinhNguyen" ? "red" : "white",
+                        }}
+                        href="/TNTinhNguyen"
+                        className={css.NavMenuCustom}
+                      >
                         Thanh Niên Tình Nguyện
                       </Link>
                     </Nav>
-                    <Form className="d-flex">
-                      <Form.Control
-                        type="search"
-                        placeholder="Search"
-                        className="me-2"
-                        aria-label="Search"
-                      />
-                      <Button variant="outline-success">Search</Button>
-                    </Form>
                   </Offcanvas.Body>
                 </Navbar.Offcanvas>
               </Container>
@@ -96,6 +108,17 @@ export default function Template({ children }: { children: React.ReactNode }) {
 
       {/* row content */}
       <Row className={css.rowContent}>
+        <Row>
+          <Form className="d-flex">
+            <Form.Control
+              type="search"
+              placeholder="Tìm Kiếm Nhật Kí Theo Tên Tiêu Đề Tại Đây"
+              className="me-2"
+              aria-label="Search"
+              onChange={(event) => search(event.target.value)}
+            />
+          </Form>
+        </Row>
         {children}
         {/* hiển thị nội dung của các page ở đây */}
       </Row>
