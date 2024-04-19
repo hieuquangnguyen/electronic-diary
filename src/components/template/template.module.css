@@ -1,0 +1,141 @@
+.container {
+  /* padding-bottom: 50px; */
+  border: solid rgb(153, 152, 152) 7px;
+  border-top: none;
+  border-bottom: none;
+}
+/* row dau tien */
+.rowOne {
+  padding: 10px;
+  background-color: #bee9e8;
+}
+/* hinh anh so nhat ki */
+.sonhatki {
+  display: flex;
+  justify-content: right;
+}
+.coverTitle {
+  display: flex;
+  justify-content: left;
+  padding-left: 50px;
+  /* background-color: #bde0fe; */
+}
+.titleNKTN {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.titleNKTN h3 {
+  font-size: 50px;
+}
+.titleNKTN h5 {
+  color: blue;
+}
+.CustomMenu {
+  margin-bottom: 0px;
+}
+.NavMenuCustom {
+  font-size: 17px;
+  font-weight: 500;
+  color: #ebf669;
+}
+
+.NavMenuCustom {
+  text-decoration: none;
+  padding: 10px;
+}
+.NavMenuCustom {
+  font-size: 20px;
+}
+.NavMenuCustom:hover {
+  color: white;
+}
+.formSearch {
+  display: flex;
+  padding: 10px;
+}
+.rowContent {
+  min-height: 1000px;
+  flex-direction: column;
+  background-color: #edf2f4;
+  margin-top: -16px;
+}
+.rowFooter {
+  padding: 50px;
+}
+.rowFooter .titleFooter {
+  font-size: 20px;
+  color: red;
+}
+.rowFooter .contentFooter {
+  font-size: 20px;
+}
+.ColMangXaHoi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.iconFbYoutube {
+  padding-top: 20px;
+}
+.socialFooter1 {
+  padding-right: 20px;
+}
+.socialFooter2 {
+  padding-right: 10px;
+}
+
+.ColMenuFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contentMenuFooter {
+  display: flex;
+  justify-content: center;
+}
+.contentMenuFooter a {
+  text-decoration: none;
+}
+.menuF {
+  font-size: 20px;
+  font-weight: 700;
+}
+.ColContactFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rowFooter h5 {
+  text-align: center;
+}
+/* CSS cho màn hình nhỏ */
+@media (max-width: 991px) {
+  .sonhatki {
+    /* Kiểu dáng cho màn hình nhỏ */
+    display: flex;
+    justify-content: center;
+  }
+
+  .coverTitle {
+    /* Kiểu dáng cho màn hình nhỏ */
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+  }
+  .titleNKTN h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    padding-left: 0px;
+  }
+  .titleNKTN h5 {
+    font-size: 15px;
+  }
+  .rowFooter {
+    flex-direction: column;
+  }
+  .rowFooter .titleFooter {
+    padding-top: 20px;
+  }
+}

@@ -1,0 +1,9 @@
+.headerPage {
+  text-align: center;
+  padding: 5px;
+}
+.buttonShare {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
