@@ -8,14 +8,52 @@ import ButtonGroup from "react-bootstrap/ButtonGroup";
 import DiaryItem from "@/data/diaryData/page";
 
 const NKLamTheoLoiBac: React.FC = () => {
-  function shareToFacebook(postId: string) {
-    const postUrl =
-      "https://nhat-ki-dien-tu-thanh-nien.vercel.app/TNLamTheoLoiBac"; // replace this with the url of the post
+  // tạo một mảng posts
+  const posts = [
+    // dữ liệu bài nhât kí 1
+    {
+      id: "1",
+      title: "Bài Viết Số 1",
+      content: {
+        IdDiary: "1",
+        DiaryName: "Noi gương đức tính kỉ luật của Bác Hồ",
+        Date: "18/04/2024",
+        Author: "Nguyễn Quang Hiếu",
+        Address:
+          "Thôn Trà Kiệu Tây, Xã Duy Sơn, Huyện Duy Xuyên, Tỉnh Quảng Nam.",
+        Purpose:
+          "Bài nhật kí với mong muốn truyền tải câu chuyện về tính kỉ luật.",
+        Content:
+          "Ngày hôm nay, như bao ngày khác, bầu trời bao phủ lớp mây trắng mịn, tạo nên bức tranh thiên nhiên huyền diệu cho thành phố. Tôi bước ra khỏi nhà, bắt đầu một ngày mới, nhưng không ngờ rằng hôm nay sẽ là một bài học đáng nhớ về tính kỉ luật từ chính người mà tôi luôn ngưỡng mộ - Chủ tịch Hồ Chí Minh.",
+      },
+    },
+    {
+      id: "2",
+      title: "Bài Viết Số 2",
+      content: {
+        IdDiary: "2",
+        DiaryName: "Noi gương đức tính kỉ luật của Bác Hồ",
+        Date: "18/04/2024",
+        Author: "Nguyễn Quang Hiếu",
+        Address:
+          "Thôn Trà Kiệu Tây, Xã Duy Sơn, Huyện Duy Xuyên, Tỉnh Quảng Nam.",
+        Purpose:
+          "Bài nhật kí với mong muốn truyền tải câu chuyện về tính kỉ luật.",
+        Content:
+          "Ngày hôm nay, như bao ngày khác, bầu trời bao phủ lớp mây trắng mịn, tạo nên bức tranh thiên nhiên huyền diệu cho thành phố. Tôi bước ra khỏi nhà, bắt đầu một ngày mới, nhưng không ngờ rằng hôm nay sẽ là một bài học đáng nhớ về tính kỉ luật từ chính người mà tôi luôn ngưỡng mộ - Chủ tịch Hồ Chí Minh.",
+      },
+    },
+  ];
 
-    const url = `https://www.facebook.com/sharer/sharer.php?u=${postUrl}/${postId}`;
+  function getPostUrl(postId: string, postUrl: string) {
+    return `${postUrl}/${postId}`;
+  }
+
+  function shareToFacebook(postId: string, postUrl: string) {
+    const url = getPostUrl(postId, postUrl);
 
     window.open(
-      url,
+      `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
       "_blank",
       "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400"
     );
@@ -32,39 +70,49 @@ const NKLamTheoLoiBac: React.FC = () => {
             <div className={css.coverListNhatKi}>
               <div id="modal-root">
                 <Accordion defaultActiveKey={"0"}>
-                  {/* Nhật kí 1 */}
-                  <Accordion.Item eventKey="0" id="post1">
-                    <Accordion.Header>bài 1</Accordion.Header>
-                    <Accordion.Body>
-                      {/* okay đây */}
-                      <DiaryItem
-                        IdDiary="1"
-                        DiaryName="Noi gương đức tính kỉ luật của Bác Hồ"
-                        Date="18/04/2024"
-                        Author="Nguyễn Quang Hiếu"
-                        Address="Thôn Trà Kiệu Tây, Xã Duy Sơn, Huyện Duy Xuyên, Tỉnh Quảng Nam."
-                        Purpose="Bài nhật kí với mong muốn truyền tải câu chuyện về tính kỉ luật."
-                        Content="Ngày hôm nay, như bao ngày khác, bầu trời bao phủ lớp mây trắng mịn, tạo nên bức tranh thiên nhiên huyền diệu cho thành phố. Tôi bước ra khỏi nhà, bắt đầu một ngày mới, nhưng không ngờ rằng hôm nay sẽ là một bài học đáng nhớ về tính kỉ luật từ chính người mà tôi luôn ngưỡng mộ - Chủ tịch Hồ Chí Minh."
-                      />
-                      {/* button share fb, button coppy link */}
-                      <div className={css.buttonShare}>
-                        <ButtonGroup aria-label="Basic example">
-                          <Button
-                            variant="success"
-                            onClick={() => shareToFacebook("post1")}
-                          >
-                            <b>Chia Sẻ Facebook</b>
-                          </Button>
+                  {posts.map((post, index) => (
+                    // Nhật kí số 1
+                    <Accordion.Item
+                      eventKey={index.toString()}
+                      id={`post${post.id}`}
+                      key={post.id}
+                    >
+                      <Accordion.Header>{post.title}</Accordion.Header>
 
-                          <Button variant="info">
-                            <b>Coppy Link</b>
-                          </Button>
-                        </ButtonGroup>
-                      </div>
-                    </Accordion.Body>
-                  </Accordion.Item>
+                      <Accordion.Body>
+                        <DiaryItem
+                          IdDiary={post.content.IdDiary}
+                          DiaryName={post.content.DiaryName}
+                          Date={post.content.Date}
+                          Author={post.content.Author}
+                          Address={post.content.Address}
+                          Purpose={post.content.Purpose}
+                          Content={post.content.Content}
+                        />
 
-                  {/* Nhật kí 2 */}
+                        <div className={css.buttonShare}>
+                          <ButtonGroup aria-label="Basic example">
+                            <Button
+                              variant="success"
+                              onClick={() =>
+                                shareToFacebook(
+                                  post.id,
+                                  "https://nhat-ki-dien-tu-thanh-nien.vercel.app/TNLamTheoLoiBac#post" +
+                                    post.id
+                                )
+                              }
+                            >
+                              <b>Chia Sẻ Facebook</b>
+                            </Button>
+
+                            <Button variant="info">
+                              <b>Copy Link</b>
+                            </Button>
+                          </ButtonGroup>
+                        </div>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  ))}
                 </Accordion>
               </div>
             </div>
