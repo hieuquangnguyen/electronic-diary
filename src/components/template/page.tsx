@@ -4,7 +4,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-
 import css from "./template.module.css";
 
 import Nav from "react-bootstrap/Nav";
@@ -49,7 +48,11 @@ export default function Template({ children }: { children: React.ReactNode }) {
               data-bs-theme="dark"
             >
               <Container fluid>
-                <Navbar.Brand href="#">HAVE A SWEET TIME!</Navbar.Brand>
+                <Navbar.Brand href="#">
+                  <div className={css.hast}>
+                    <b>Enjoy Your Stay Here!</b>
+                  </div>
+                </Navbar.Brand>
                 <Navbar.Toggle
                   aria-controls={`offcanvasNavbar-expand-${expand}`}
                 />
@@ -109,79 +112,92 @@ export default function Template({ children }: { children: React.ReactNode }) {
 
       {/* row content */}
       <Row className={css.rowContent}>
-        
         {children}
         {/* hiển thị nội dung của các page ở đây */}
       </Row>
 
       {/* row footer */}
       <Row className={css.rowFooter}>
-        {/* cột đầu tiên social media */}
-        <Col className={css.ColMangXaHoi}>
-          <div className={css.titleFooter}>
-            <b>MẠNG XÃ HỘI</b>
-          </div>
-          <Row className={css.iconFbYoutube}>
-            <div className={css.contentFooter}>
-              <Link href="#" className={css.socialFooter1}>
-                <Image
-                  src="facebook.svg"
-                  rounded
-                  width={"50px"}
-                  height={"50px"}
-                ></Image>
-              </Link>
-              <Link href="#" className={css.socialFooter2}>
-                <Image
-                  src="youtube.svg"
-                  rounded
-                  width={"50px"}
-                  height={"50px"}
-                ></Image>
-              </Link>
+        {/* có 3 cột */}
+        <Row>
+          {/* cột đầu tiên social media */}
+          <Col className={css.ColMangXaHoi}>
+            <div className={css.titleFooter}>
+              <b>MẠNG XÃ HỘI</b>
             </div>
-          </Row>
-        </Col>
-        {/* cột 2 là menu */}
-        <Col className={css.ColMenuFooter}>
-          <div className={css.titleFooter}>
-            <b>MENU</b>
-          </div>
-          <Row>
-            <div className={css.contentMenuFooter}>
-              <Link href="/" className={css.menuF}>
-                Trang chủ
-              </Link>
+            <Row className={css.iconFbYoutube}>
+              <div className={css.contentFooter}>
+                <Link href="#" className={css.socialFooter1}>
+                  <Image
+                    src="facebook.svg"
+                    rounded
+                    width={"50px"}
+                    height={"50px"}
+                  ></Image>
+                </Link>
+                <Link href="#" className={css.socialFooter2}>
+                  <Image
+                    src="youtube.svg"
+                    rounded
+                    width={"50px"}
+                    height={"50px"}
+                  ></Image>
+                </Link>
+              </div>
+            </Row>
+          </Col>
+          {/* cột 2 là menu */}
+          <Col className={css.ColMenuFooter}>
+            <div className={css.titleFooter}>
+              <b>MENU</b>
             </div>
-            <div className={css.contentMenuFooter}>
-              <Link href="/NKTNLamTheoLoiBac" className={css.menuF}>
-                Thanh Niên Làm Theo Lời Bác
-              </Link>
+            <Row>
+              <div className={css.contentMenuFooter}>
+                <Link href="/" className={css.menuF}>
+                  Trang chủ
+                </Link>
+              </div>
+              <div className={css.contentMenuFooter}>
+                <Link href="/NKTNLamTheoLoiBac" className={css.menuF}>
+                  Thanh Niên Làm Theo Lời Bác
+                </Link>
+              </div>
+              <div className={css.contentMenuFooter}>
+                <Link href="/NKTNTinhNguyen" className={css.menuF}>
+                  Thanh Niên Tình Nguyện
+                </Link>
+              </div>
+            </Row>
+          </Col>
+          {/* cột thông tin liên hệ */}
+          <Col className={css.ColContactFooter}>
+            <div className={css.titleFooter}>
+              <b>THÔNG TIN LIÊN HỆ</b>
             </div>
-            <div className={css.contentMenuFooter}>
-              <Link href="/NKTNTinhNguyen" className={css.menuF}>
-                Thanh Niên Tình Nguyện
-              </Link>
-            </div>
-          </Row>
-        </Col>
-        {/* cột thông tin liên hệ */}
-        <Col className={css.ColContactFooter}>
-          <div className={css.titleFooter}>
-            <b>THÔNG TIN LIÊN HỆ</b>
-          </div>
-          <Row>
-            <div className={css.contentFooter}>
-              <b>SĐT: 070 796 0071</b>
-            </div>{" "}
-          </Row>
+            <Row>
+              <div className={css.contentFooter}>
+                <b>SĐT: 070 796 0071</b>
+              </div>{" "}
+            </Row>
 
-          <Row>
-            <div className={css.contentFooter}>
-              <b>Email: stshieu@gmail.com</b>
-            </div>{" "}
-          </Row>
-        </Col>
+            <Row>
+              <div className={css.contentFooter}>
+                <b>Email: stshieu@gmail.com</b>
+              </div>{" "}
+            </Row>
+          </Col>
+        </Row>
+        {/* cột thông tin coding by */}
+        <Row>
+          <div style={{ textAlign: "center", paddingTop: "20px" }}>
+            <Link href="/#" style={{ textDecoration: "none" }}>
+              © Coppy right:
+              <b>
+                <i> Quang Hiếu - Harry</i>
+              </b>
+            </Link>
+          </div>
+        </Row>
       </Row>
     </Container>
   );

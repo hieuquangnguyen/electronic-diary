@@ -32,7 +32,7 @@
 /* .coverheader {
 } */
 .tittle {
-  font-size: 20px;
+  font-size: 16px;
   padding-left: 10px;
   line-height: 50px;
   text-align: center;
@@ -45,7 +45,7 @@
 }
 .modal_header a {
   width: 50px;
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
   color: red;
 }

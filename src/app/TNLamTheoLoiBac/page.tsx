@@ -13,12 +13,48 @@ import Form from "react-bootstrap/Form";
 import { usePathname } from "next/navigation";
 import { Suspense } from "react";
 
+// coppy link
+import clipboardCopy from "clipboard-copy";
+
+import Alert from "react-bootstrap/Alert";
+
+import dataPost from "@/data/diaryContent/postsTheoLoiBac.json";
+
 const NKLamTheoLoiBac: React.FC = () => {
+  // Khai báo state để lưu trạng thái hiển thị của Alert
+  const [showAlert, setShowAlert] = useState(false);
+
   // xử lí search
   const pathname = usePathname();
   const { search } = useCommonStore();
 
   const searchParams = useSearchParams();
+
+  // coppy link
+  // Định nghĩa hàm copyLink để sao chép liên kết của bài viết
+  const copyLink = (postId: string) => {
+    const url = getPostUrl(postId); // Lấy liên kết của bài viết
+    clipboardCopy(url) // Sao chép liên kết vào clipboard
+      .then(() => {
+        console.log("okk");
+        setShowAlert(true);
+      })
+      .catch((error) => {
+        console.error("Lỗi khi sao chép liên kết:", error);
+        alert("Đã xảy ra lỗi khi sao chép liên kết!");
+      });
+  };
+
+  useEffect(() => {
+    if (showAlert) {
+      const timer = setTimeout(() => {
+        setShowAlert(false); // Tắt thẻ Alert sau 5 giây
+      }, 5000);
+
+      // Xóa hẹn giờ khi component bị unmount hoặc showAlert thay đổi
+      return () => clearTimeout(timer);
+    }
+  }, [showAlert]);
 
   // Tạo một state để lưu trữ postIdToOpen
   const [postIdToOpen, setPostIdToOpen] = useState<string>("1");
@@ -40,95 +76,10 @@ const NKLamTheoLoiBac: React.FC = () => {
     setPostIdToOpen(postId);
   };
 
-  // tạo một mảng posts
-  const posts = [
-    // dữ liệu bài nhât kí 1
-    {
-      id: "1",
-      title: "Bài Viết Số 1",
-      content: {
-        IdDiary: "1",
-        DiaryName: "Noi gương đức tính kỉ luật của Bác Hồ",
-        Date: "18/04/2024",
-        Author: "Nguyễn Quang Hiếu",
-        Address:
-          "Thôn Trà Kiệu Tây, Xã Duy Sơn, Huyện Duy Xuyên, Tỉnh Quảng Nam.",
-        Purpose:
-          "Bài nhật kí với mong muốn truyền tải câu chuyện về tính kỉ luật.",
-        Content:
-          "Ngày hôm nay, như bao ngày khác, bầu trời bao phủ lớp mây trắng mịn, tạo nên bức tranh thiên nhiên huyền diệu cho thành phố. Tôi bước ra khỏi nhà, bắt đầu một ngày mới, nhưng không ngờ rằng hôm nay sẽ là một bài học đáng nhớ về tính kỉ luật từ chính người mà tôi luôn ngưỡng mộ - Chủ tịch Hồ Chí Minh.",
-      },
-    },
-    {
-      id: "2",
-      title: "Bài Viết Số 2",
-      content: {
-        IdDiary: "2",
-        DiaryName: "Noi gương đức tính kỉ luật của Bác Hồ",
-        Date: "18/04/2024",
-        Author: "Nguyễn Quang Hiếu",
-        Address:
-          "Thôn Trà Kiệu Tây, Xã Duy Sơn, Huyện Duy Xuyên, Tỉnh Quảng Nam.",
-        Purpose:
-          "Bài nhật kí với mong muốn truyền tải câu chuyện về tính kỉ luật.",
-        Content:
-          "Ngày hôm nay, như bao ngày khác, bầu trời bao phủ lớp mây trắng mịn, tạo nên bức tranh thiên nhiên huyền diệu cho thành phố. Tôi bước ra khỏi nhà, bắt đầu một ngày mới, nhưng không ngờ rằng hôm nay sẽ là một bài học đáng nhớ về tính kỉ luật từ chính người mà tôi luôn ngưỡng mộ - Chủ tịch Hồ Chí Minh.",
-      },
-    },
-    {
-      id: "3",
-      title: "Bài Viết Số 3",
-      content: {
-        IdDiary: "3",
-        DiaryName: "Noi gương đức tính kỉ luật của Bác Hồ",
-        Date: "18/04/2024",
-        Author: "Nguyễn Quang Hiếu",
-        Address:
-          "Thôn Trà Kiệu Tây, Xã Duy Sơn, Huyện Duy Xuyên, Tỉnh Quảng Nam.",
-        Purpose:
-          "Bài nhật kí với mong muốn truyền tải câu chuyện về tính kỉ luật.",
-        Content:
-          "Ngày hôm nay, như bao ngày khác, bầu trời bao phủ lớp mây trắng mịn, tạo nên bức tranh thiên nhiên huyền diệu cho thành phố. Tôi bước ra khỏi nhà, bắt đầu một ngày mới, nhưng không ngờ rằng hôm nay sẽ là một bài học đáng nhớ về tính kỉ luật từ chính người mà tôi luôn ngưỡng mộ - Chủ tịch Hồ Chí Minh.",
-      },
-    },
-    {
-      id: "4",
-      title: "Bài Viết Số 4",
-      content: {
-        IdDiary: "4",
-        DiaryName: "Noi gương đức tính kỉ luật của Bác Hồ",
-        Date: "18/04/2024",
-        Author: "Nguyễn Quang Hiếu",
-        Address:
-          "Thôn Trà Kiệu Tây, Xã Duy Sơn, Huyện Duy Xuyên, Tỉnh Quảng Nam.",
-        Purpose:
-          "Bài nhật kí với mong muốn truyền tải câu chuyện về tính kỉ luật.",
-        Content:
-          "Ngày hôm nay, như bao ngày khác, bầu trời bao phủ lớp mây trắng mịn, tạo nên bức tranh thiên nhiên huyền diệu cho thành phố. Tôi bước ra khỏi nhà, bắt đầu một ngày mới, nhưng không ngờ rằng hôm nay sẽ là một bài học đáng nhớ về tính kỉ luật từ chính người mà tôi luôn ngưỡng mộ - Chủ tịch Hồ Chí Minh.",
-      },
-    },
-    {
-      id: "5",
-      title: "Bài Viết Số 5",
-      content: {
-        IdDiary: "5",
-        DiaryName: "Noi gương đức tính kỉ luật của Bác Hồ",
-        Date: "18/04/2024",
-        Author: "Nguyễn Quang Hiếu",
-        Address:
-          "Thôn Trà Kiệu Tây, Xã Duy Sơn, Huyện Duy Xuyên, Tỉnh Quảng Nam.",
-        Purpose:
-          "Bài nhật kí với mong muốn truyền tải câu chuyện về tính kỉ luật.",
-        Content:
-          "Ngày hôm nay, như bao ngày khác, bầu trời bao phủ lớp mây trắng mịn, tạo nên bức tranh thiên nhiên huyền diệu cho thành phố. Tôi bước ra khỏi nhà, bắt đầu một ngày mới, nhưng không ngờ rằng hôm nay sẽ là một bài học đáng nhớ về tính kỉ luật từ chính người mà tôi luôn ngưỡng mộ - Chủ tịch Hồ Chí Minh.",
-      },
-    },
-  ];
-
   function getPostUrl(postId: string) {
     const baseUrl =
       "https://nhat-ki-dien-tu-thanh-nien.vercel.app/TNLamTheoLoiBac";
-    return `${baseUrl}?postId=${postId}}`; // Append post ID to the URL
+    return `${baseUrl}?postId=${postId}`; // Append post ID to the URL
   }
 
   function shareToFacebook(postId: string) {
@@ -140,10 +91,13 @@ const NKLamTheoLoiBac: React.FC = () => {
       "_blank",
       "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400"
     );
-
     // Update state to set the defaultActiveKey to the shared post ID
     setPostIdToOpen(postId);
   }
+
+  // tạo một mảng posts
+  const posts = dataPost;
+
   // lọc search
   const filteredPosts = posts.filter((post) => post.title.includes(keywords));
 
@@ -151,6 +105,19 @@ const NKLamTheoLoiBac: React.FC = () => {
     <>
       <CoverContentDiary>
         <>
+          {showAlert && (
+            <Alert
+              variant="success"
+              onClose={() => setShowAlert(false)}
+              dismissible
+              className={css.customAlert}
+            >
+              <Alert.Heading>Thành Công</Alert.Heading>
+              <p className="mb-0">
+                <b>Bạn đã sao chép thành công.</b>
+              </p>
+            </Alert>
+          )}
           <div className={css.coverNhatKiPage}>
             <div className={css.headerPage}>
               <h3>NHẬT KÍ THANH NIÊN LÀM THEO LỜI BÁC</h3>
@@ -195,12 +162,25 @@ const NKLamTheoLoiBac: React.FC = () => {
                           <ButtonGroup aria-label="Basic example">
                             <Button
                               variant="success"
+                              style={{
+                                width: "150px",
+                                border: "solid 3px white",
+                                borderRadius: "5px",
+                              }}
                               onClick={() => shareToFacebook(post.id)}
                             >
-                              <b>Chia Sẻ Facebook</b>
+                              <b>Share Facebook</b>
                             </Button>
 
-                            <Button variant="info">
+                            <Button
+                              variant="success"
+                              style={{
+                                width: "150px",
+                                border: "solid 3px white",
+                                borderRadius: "5px",
+                              }}
+                              onClick={() => copyLink(post.id)}
+                            >
                               <b>Copy Link</b>
                             </Button>
                           </ButtonGroup>

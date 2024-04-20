@@ -308,7 +308,7 @@ export default function Home() {
                 <Accordion.Item eventKey="3">
                   <Accordion.Header>
                     <div className={css.headerAccordion}>
-                      <b> Làm sao để có thể chia sẽ nhật kí lên đây?</b>
+                      <b> Làm sao để có thể chia sẻ nhật kí lên đây?</b>
                     </div>
                   </Accordion.Header>
                   <Accordion.Body>

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1",
+    "title": "Bài Viết Số 1",
+    "content": {
+      "IdDiary": "1",
+      "DiaryName": "Noi gương đức tính kỉ luật của Bác Hồ",
+      "Date": "18/04/2024",
+      "Author": "Nguyễn Quang Hiếu",
+      "Address": "Thôn Trà Kiệu Tây, Xã Duy Sơn, Huyện Duy Xuyên, Tỉnh Quảng Nam.",
+      "Purpose": "Bài nhật kí với mong muốn truyền tải câu chuyện về tính kỉ luật.",
+      "Content": "Ngày hôm nay, như bao ngày khác, bầu trời bao phủ lớp mây trắng mịn, tạo nên bức tranh thiên nhiên huyền diệu cho thành phố. Tôi bước ra khỏi nhà, bắt đầu một ngày mới, nhưng không ngờ rằng hôm nay sẽ là một bài học đáng nhớ về tính kỉ luật từ chính người mà tôi luôn ngưỡng mộ - Chủ tịch Hồ Chí Minh."
+    }
+  },
+  {
+    "id": "2",
+    "title": "Bài Viết Số 2",
+    "content": {
+      "IdDiary": "2",
+      "DiaryName": "Noi gương đức tính kỉ luật của Bác Hồ",
+      "Date": "18/04/2024",
+      "Author": "Nguyễn Quang Hiếu",
+      "Address": "Thôn Trà Kiệu Tây, Xã Duy Sơn, Huyện Duy Xuyên, Tỉnh Quảng Nam.",
+      "Purpose": "Bài nhật kí với mong muốn truyền tải câu chuyện về tính kỉ luật.",
+      "Content": "Ngày hôm nay, như bao ngày khác, bầu trời bao phủ lớp mây trắng mịn, tạo nên bức tranh thiên nhiên huyền diệu cho thành phố. Tôi bước ra khỏi nhà, bắt đầu một ngày mới, nhưng không ngờ rằng hôm nay sẽ là một bài học đáng nhớ về tính kỉ luật từ chính người mà tôi luôn ngưỡng mộ - Chủ tịch Hồ Chí Minh."
+    }
+  }
+]

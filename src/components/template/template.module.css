@@ -31,13 +31,23 @@
 }
 .titleNKTN h5 {
   color: blue;
+  font-size: 16px;
 }
+
+/* menu */
+/* have a sweet time */
+.hast b {
+  font-size: 16px;
+  padding-left: 10px;
+  color: #ffff3f;
+}
+
 .CustomMenu {
   margin-bottom: 0px;
 }
 .NavMenuCustom {
-  font-size: 17px !important;
-  font-weight: 500;
+  font-size: 16px !important;
+  font-weight: 700;
   color: #ebf669;
 }
 
@@ -60,14 +70,18 @@
   margin-top: -16px;
 }
 .rowFooter {
-  padding: 50px;
+  padding-top: 20px !important;
+  padding: 30px;
+  background-color: #bee9e8;
+  /* background-color: #aed9e0; */
 }
 .rowFooter .titleFooter {
-  font-size: 20px;
+  font-size: 16px;
   color: red;
+  text-align: center;
 }
 .rowFooter .contentFooter {
-  font-size: 20px;
+  font-size: 16px;
 }
 .ColMangXaHoi {
   display: flex;
@@ -87,23 +101,21 @@
 .ColMenuFooter {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .contentMenuFooter {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .contentMenuFooter a {
   text-decoration: none;
 }
 .menuF {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 700;
 }
 .ColContactFooter {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .rowFooter h5 {
   text-align: center;
@@ -123,12 +135,12 @@
     padding-left: 0px;
   }
   .titleNKTN h3 {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 10px;
     padding-left: 0px;
   }
   .titleNKTN h5 {
-    font-size: 17px;
+    font-size: 16px;
   }
   .rowFooter {
     flex-direction: column;
