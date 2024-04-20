@@ -119,7 +119,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
       {/* row footer */}
       <Row className={css.rowFooter}>
         {/* có 3 cột */}
-        <Row>
+        <>
           {/* cột đầu tiên social media */}
           <Col className={css.ColMangXaHoi}>
             <div className={css.titleFooter}>
@@ -186,7 +186,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
               </div>{" "}
             </Row>
           </Col>
-        </Row>
+        </>
         {/* cột thông tin coding by */}
         <Row>
           <div style={{ textAlign: "center", paddingTop: "20px" }}>
