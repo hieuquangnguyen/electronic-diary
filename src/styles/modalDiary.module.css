@@ -31,12 +31,20 @@
 }
 /* .coverheader {
 } */
-.tittle {
-  font-size: 16px;
-  padding-left: 10px;
+.coverTitle {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  justify-content: space-around;
   line-height: 50px;
-  text-align: center;
 }
+.title {
+  padding-left: 20px;
+}
+.close {
+  padding-left: 35px;
+}
+
 .modal_header {
   width: 100%;
   /* display: flex; */
@@ -58,8 +66,14 @@
   padding-right: 20px;
 }
 @media screen and (max-width: 600px) {
-  .tittle {
-    display: none;
+  .coverTitle {
+    font-size: 16px;
+  }
+  .title {
+    padding-left: 0px;
+  }
+  .close {
+    padding-left: 0px;
   }
   .modal_wrapper {
     width: 90%;

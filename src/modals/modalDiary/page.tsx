@@ -43,20 +43,16 @@ const ModalDiary: React.FC<ModalProps> = ({ onClose, children, title }) => {
         <div className={css.modal}>
           <div className={css.modal_header}>
             <Row className={css.coverheader}>
-              <Col sm="11">
-                <div className={css.tittle}>
+              <div className={css.coverTitle}>
+                <Col sm="11" className={css.title}>
                   <b>NHẬT KÍ ĐIỆN TỬ THANH NIÊN</b>
-                </div>
-              </Col>
-              <Col sm="1" style={{ textAlign: "end" }}>
-                <a
-                  href="#"
-                  onClick={handleCloseClick}
-                  style={{ paddingRight: "10px" }}
-                >
-                  <b>X</b>
-                </a>
-              </Col>
+                </Col>
+                <Col sm="1">
+                  <a href="#" className={css.close} onClick={handleCloseClick}>
+                    <b>X</b>
+                  </a>
+                </Col>
+              </div>
             </Row>
           </div>
           <div className={css.modal_body}>{children}</div>

@@ -8,6 +8,10 @@
   /* thụt lề */
   /* text-indent: 50px; */
 }
+.content {
+  margin-top: 10px;
+  padding-top: 5px;
+}
 .coverContentModalDetail {
   font-size: 16px;
 }
