@@ -220,7 +220,55 @@ export default function Home() {
                       <b>Giới Thiệu Hệ Thống</b>
                     </div>
                   </Accordion.Header>
-                  <Accordion.Body>... Giới thiệu về website</Accordion.Body>
+                  <Accordion.Body>
+                    {" "}
+                    <div className={css.contentAccordion}>
+                      <b>Nhật Kí Điện Tử</b> là một nền tảng đoàn xã trực tuyến,
+                      nơi mà mọi người có thể ghi chép, chia sẻ và tương tác với
+                      những kiến thức, thông tin, và trải nghiệm cá nhân của các
+                      bạn. Trang web này được thiết kế ra với mục đích tạo ra
+                      một không gian mở, thân thiện và sáng tạo cho cộng đồng,
+                      nơi mà mỗi cá nhân có thể tự do diễn đạt ý kiến,và kết nối
+                      với nhau qua việc chia sẻ câu chuyện của mình.
+                      <br />
+                      &nbsp;&nbsp;&nbsp;&nbsp; Nhật Kí Điện Tử có giao diện thân
+                      thiện, dễ sử dụng và thân thiện với người dùng. Trang web
+                      được cấu trúc rõ ràng với các phần như Trang chủ, Nhật Kí
+                      Thanh Niên Làm Theo Lời Bác, Nhật Kí Thanh Niên Tình
+                      Nguyện. Nội dung chính của trang web bao gồm các bài viết,
+                      nhật ký cá nhân, hình ảnh. Mục tiêu của Nhật Kí Điện Tử là
+                      tạo ra một cộng đồng trực tuyến năng động, mang lại giá
+                      trị thông tin và tương tác cho mọi thành viên.
+                      <br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;Trang web cung cấp 2 chức năng hữu
+                      ích như Tìm kiếm các bài nhật kí thông qua tiêu đề, và
+                      chức năng chia sẽ bài viết nhật kí lên Facebook hay chia
+                      sẻ đi bất cứ nơi nào bạn muốn.
+                      <br />
+                      &nbsp;&nbsp;&nbsp;&nbsp; Sử dụng Nhật Kí Điện Tử mang lại
+                      nhiều lợi ích cho các bạn: <br />
+                      <li>
+                        1. Đầu tiên, các bạn có thể chia sẻ kiến thức, kinh
+                        nghiệm và cảm xúc của mình với mọi người trên mạng.
+                      </li>
+                      <li>
+                        2. Thứ hai, trang web cung cấp một không gian cho sự
+                        sáng tạo và tự do diễn đạt ý kiến của bản thân.
+                      </li>
+                      <li>
+                        3. Cuối cùng, việc tham gia vào cộng đồng trực tuyến
+                        giúp mở rộng mạng lưới quan hệ và học hỏi từ những người
+                        khác.
+                      </li>
+                      &nbsp;&nbsp;&nbsp;&nbsp;<b>Nhật Kí Điện Tử</b> là một công
+                      cụ quan trọng trong việc ghi chép và chia sẻ thông tin,
+                      kiến thức của mọi người. Việc tham gia vào trang web này
+                      không chỉ là cách tốt nhất để thể hiện bản thân mà còn là
+                      cách để kết nối và học hỏi từ cộng đồng. Chúng tôi khuyến
+                      khích các bạn thanh niên hãy truy cập và sử dụng trang web
+                      để tận hưởng những lợi ích mà nó mang lại.
+                    </div>
+                  </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
                   <Accordion.Header>
@@ -229,7 +277,7 @@ export default function Home() {
                     </div>
                   </Accordion.Header>
                   <Accordion.Body>
-                    <div>Chào Cậu!</div>
+                    <div>Chào các bạn!</div>
                     <div className={css.contentAccordion}>
                       Việc viết nhật ký không chỉ là một thói quen tốt giúp
                       chúng ta ghi lại cuộc sống hàng ngày, mà còn là cách để tự
@@ -253,36 +301,24 @@ export default function Home() {
                     </div>
                   </Accordion.Header>
                   <Accordion.Body>
-                    <div>Hi Cậu!</div>
+                    <div>Chào các bạn!</div>
                     <div>
                       Việc viết nhật ký điện tử không chỉ là một phương tiện để
                       ghi chép lại những suy nghĩ và trải nghiệm hàng ngày, mà
                       còn là cách để thế hệ trẻ kết nối, chia sẻ và học hỏi lẫn
                       nhau.
                       <br />
-                      Tại sổ Nhật Kí Thanh Niên Điện Tử này, thì chủ đề đã được
-                      ban tổ chức gói gọn lại. Với mong muốn rằng, các bạn thanh
-                      niên khi viết nhật kí chia sẻ lên đây sẽ tập trung vào chủ
-                      đề là các bài học hay về tâm gương học tập và làm theo tư
-                      tưởng, đạo đức, phong cách Hồ Chí Minh. Và qua việc viết
-                      nhật ký, thanh niên có thể suy ngẫm và phản ánh về những
-                      bài học quý báu từ các tâm gương sáng, đồng thời áp dụng
-                      chúng vào cuộc sống hiện đại. Nhật ký điện tử cũng giúp
-                      bảo tồn di sản tư tưởng trong môi trường số hóa, giúp lan
-                      tỏa những giá trị đó đến với cộng đồng rộng lớn hơn, qua
-                      đó tạo điều kiện cho việc học hỏi và trao đổi giữa các thế
-                      hệ. Nó là cầu nối giữa quá khứ và tương lai, giữa truyền
-                      thống và hiện đại, giữa cá nhân và cộng đồng. Việc viết
-                      nhật ký điện tử không chỉ giúp thanh niên phát triển kỹ
-                      năng viết lách và tư duy phản biện, mà còn góp phần hình
-                      thành nhân cách, rèn luyện ý chí và bồi đắp tâm hồn. Trong
-                      thời đại thông tin bùng nổ như hiện nay, nhật ký điện tử
-                      còn là phương tiện để thanh niên thể hiện sự quan tâm đến
-                      các vấn đề xã hội, tham gia vào các cuộc thảo luận công
-                      cộng, và phản ánh về những thách thức mà thế giới đang đối
-                      mặt. Qua đó, nhật ký không chỉ là khoảng không gian cá
-                      nhân, mà còn là diễn đàn mở, nơi mọi người có thể chia sẻ
-                      và học hỏi lẫn nhau.
+                      Chúng ta còn trẻ, trong độ tuổi đầy hoài bão và khát vọng
+                      cống hiến, khát vọng trưởng thành, nhật ký điện từ này sẽ
+                      là hồi ký để sau này nhìn lại, chúng ta sẽ thấy được bản
+                      thân mình đã rèn luyện thể nào, đã cống hiến ra sao. Một
+                      giờ đến một buổi chia sẻ câu chuyện hay của mình nhưng là
+                      mãi mãi về sau cho việc chia sẻ, lan toà giá trị tích cực.
+                      Các bạn đồng trang lứa, các em nhỏ và anh chị lớn sẽ có
+                      thêm động lực chia sẻ câu chuyện của họ, và đặc biệt hơn,
+                      là tất cả chúng ta cùng có thêm động lực để sống đẹp, sống
+                      có ích, sống đầy khát khao đúng tinh thần của thanh niên
+                      thể hệ Hồ Chí Minh.
                       <br /> Như vậy, việc viết nhật ký điện tử không chỉ là
                       hoạt động cá nhân mà còn là hành động có ý nghĩa cộng
                       đồng, góp phần vào việc xây dựng và phát triển xã hội. Đó
@@ -291,17 +327,7 @@ export default function Home() {
                       việc gìn giữ và phát huy giá trị văn hóa, lịch sử là hết
                       sức cấp thiết.
                     </div>
-                    {/* <div>
-                   Chúng ta còn trẻ, trong độ tuổi đầy hoài bão và khát vọng cống
-                  hiến, khát vọng trưởng thành, nhật ký điện tử này sẽ là hồi ký
-                  để sau này chúng ta có thể nhìn lại, chúng ta sẽ thấy được bản
-                  thân mình đã rèn luyện thế nào, đã cống hiến ra sao. Một giờ
-                  đến một buổi chia sẻ câu chuyện hay của mình nhưng là mãi mãi
-                  về sau cho việc chia sẻ, lan tỏa giá trị sống đẹp. Các bạn
-                  đồng trang lứa, các em nhỏ và anh chị lớn sẽ có thêm động lực
-                  để sống đẹp, sống có ích, sống đầy khát khao đúng tinh thần
-                  của thanh niên thế hệ Hồ Chí Minh.
-                 </div> */}
+
                     <br />
                   </Accordion.Body>
                 </Accordion.Item>
@@ -312,21 +338,65 @@ export default function Home() {
                     </div>
                   </Accordion.Header>
                   <Accordion.Body>
-                    Bước 1: Bạn hãy chọn các chủ đề dưới đây để viết Nhật Kí.
+                    <strong>
+                      Bước 1: Bạn hãy chọn các chủ đề dưới đây để viết Nhật Kí.
+                    </strong>
                     <br />
-                    1.
+                    <div style={{ paddingLeft: "20px" }}>
+                      <b>
+                        CÁC CHUYÊN ĐỀ TRONG NHẬT KÝ ĐIỆN TỬ THANH NIÊN LÀM THEO
+                        LỜI BÁC
+                      </b>
+                      <br />
+                      1. Về Khát vọng cống hiến và xây dựng đất nước <br />
+                      2. Về giữ gìn và phát huy bản sắc văn hoá dân tộc <br />
+                      3. Về tinh thần học tập suốt đời, nâng cao trình độ về mọi
+                      mặt; sáng tạo và đổi mới trong suy nghĩ và hành động: dám
+                      nghĩ, dám làm, dám hi sinh, dám cống hiến vì mục tiêu
+                      chung. <br />
+                      4. Về sống có lý tưởng <br />
+                      5. Về rèn luyện, tu dưỡng đạo đức cách mạng, rèn luyện ý
+                      chí, bản lĩnh chính trị của người thanh niên
+                      <br />
+                      6. Về tinh thần xung kích tình nguyện “Đâu cần thanh niên
+                      có, đâu khó có thanh niên” <br />
+                      7. Về bảo vệ nền tảng tư tưởng của Đảng, đấu tranh phản
+                      bác các quan điểm sai trái thù địch. <br />
+                      8. Về rèn luyện kỹ năng cho thanh niên <br />
+                      9. Khác
+                      <br />
+                      <b>
+                        CÁC CHUYÊN ĐỀ TRONG NHẬT KÝ ĐIỆN TỬ THANH NIÊN TÌNH
+                        NGUYỆN
+                      </b>
+                      <br /> 1. Các hoạt động tình nguyện bảo vệ môi trường{" "}
+                      <br />
+                      2. Thanh niên và giáo dục cộng đồng <br />
+                      3. Tình nguyện xây dựng cộng đồng <br />
+                      4. Thanh niên và chăm sóc sức khỏe cộng đồng <br />
+                      5. Tình nguyện trong lĩnh vực văn hóa và nghệ thuật <br />
+                      6. Tình nguyện trong lĩnh vực phòng chống tội phạm <br />
+                      7. Phát triển kỹ năng cá nhân và nghề nghiệp thông qua
+                      hoạt động tình nguyện <br />
+                      8. Thanh niên và tình nguyện quốc tế <br />
+                      9. Sự đóng góp của thanh niên trong các dự án công nghệ và
+                      phát triển kỹ thuật <br />
+                      10. Khác
+                    </div>
                     <br />
-                    2.
-                    <br />
-                    3.
-                    <br />
-                    Bước 2: Quay lại đây và click vào link dưới đây để có thể
-                    nộp bài về Ban Tổ Chức.
+                    <strong>
+                      Bước 2: Quay lại đây và click vào link dưới đây để có thể
+                      nộp bài về Ban Tổ Chức.
+                    </strong>
                     <Link href="#">Click vào đây.</Link>
                     <br />
-                    Bước 3: Ban tổ chức sẽ xác nhận hoặc feedback bài viết của
-                    bạn trong 24h trước khi bài viết được đăng lên trang web này
-                    để chia sẻ ra cộng đồng.
+                    <br />
+                    <strong>
+                      {" "}
+                      Bước 3: Ban tổ chức sẽ xác nhận hoặc feedback bài viết của
+                      bạn trong 24h trước khi bài viết được đăng lên trang web
+                      này để chia sẻ ra cộng đồng.
+                    </strong>
                   </Accordion.Body>
                 </Accordion.Item>
               </Accordion>

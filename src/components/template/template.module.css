@@ -31,7 +31,7 @@
 }
 .titleNKTN h5 {
   color: blue;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 /* menu */
@@ -76,7 +76,7 @@
   /* background-color: #aed9e0; */
 }
 .rowFooter .titleFooter {
-  font-size: 16px;
+  font-size: 17px;
   color: red;
   text-align: center;
 }
@@ -135,12 +135,12 @@
     padding-left: 0px;
   }
   .titleNKTN h3 {
-    font-size: 16px;
+    font-size: 30px;
     margin-top: 10px;
     padding-left: 0px;
   }
   .titleNKTN h5 {
-    font-size: 16px;
+    font-size: 20px;
   }
   .rowFooter {
     flex-direction: column;

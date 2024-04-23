@@ -176,14 +176,32 @@ export default function Template({ children }: { children: React.ReactNode }) {
             </div>
             <Row>
               <div className={css.contentFooter}>
-                <b>SĐT: 070 796 0071</b>
-              </div>{" "}
+                <b>SĐT 1: </b>
+                <a href="tel:0987285729" style={{ textDecoration: "none" }}>
+                  <b> 0987 285 729 &#40;Nguyên&#41;</b>
+                </a>
+              </div>
             </Row>
-
             <Row>
               <div className={css.contentFooter}>
-                <b>Email: stshieu@gmail.com</b>
-              </div>{" "}
+                <b>SĐT 2: </b>
+                <a href="tel:0399280149" style={{ textDecoration: "none" }}>
+                  {" "}
+                  <b> 0399 280 149 &#40;Nhung&#41;</b>
+                </a>
+              </div>
+            </Row>
+            <Row>
+              <div className={css.contentFooter}>
+                <b>Email: </b>
+                <a
+                  href="mailto:dtnduyson@gmail.com"
+                  style={{ textDecoration: "none" }}
+                >
+                  {" "}
+                  <b> dtnduyson@gmail.com</b>
+                </a>
+              </div>
             </Row>
           </Col>
         </>
@@ -191,7 +209,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
         <Row>
           <div style={{ textAlign: "center", paddingTop: "20px" }}>
             <Link href="/#" style={{ textDecoration: "none" }}>
-              © Coppy right:
+              ©Coppy right:
               <b>
                 <i> Quang Hiếu - Harry</i>
               </b>

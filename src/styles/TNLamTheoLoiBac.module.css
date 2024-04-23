@@ -15,7 +15,7 @@
   z-index: 1000; /* Đảm bảo alert nổi lên trên các phần khác */
   border: solid 3px grey;
 
-  background-color: #e9edc9;
+  background-color: #eef99b;
   /* Định dạng thêm nếu cần */
   width: auto; /* Chiều rộng tự động vừa với nội dung */
   max-width: 90%; /* Chiều rộng tối đa */
@@ -24,5 +24,5 @@
   border-radius: 5px; /* Bo tròn viền */
 }
 .customAlert p {
-  color: #023047;
+  color: #045781;
 }
