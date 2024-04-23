@@ -27,7 +27,8 @@
   justify-content: center;
 }
 .titleNKTN h3 {
-  font-size: 50px;
+  font-size: 25px;
+  color: red;
 }
 .titleNKTN h5 {
   color: blue;
@@ -124,8 +125,9 @@
 @media (max-width: 991px) {
   .sonhatki {
     /* Kiểu dáng cho màn hình nhỏ */
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+    display: none;
   }
 
   .coverTitle {
@@ -135,9 +137,9 @@
     padding-left: 0px;
   }
   .titleNKTN h3 {
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 10px;
-    padding-left: 0px;
+    /* padding-left: 0px; */
   }
   .titleNKTN h5 {
     font-size: 20px;
@@ -148,4 +150,5 @@
   .rowFooter .titleFooter {
     padding-top: 20px;
   }
+
 }

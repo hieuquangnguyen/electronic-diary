@@ -29,8 +29,18 @@ export default function Template({ children }: { children: React.ReactNode }) {
         </Col>
         <Col className={css.coverTitle} sm lg={8}>
           <div className={css.titleNKTN}>
-            <h3>NHẬT KÝ THANH NIÊN</h3>
-            <h5>Xã Duy Sơn - Huyện Duy Xuyên - Tỉnh Quảng Nam.</h5>
+            <Row>
+              <h3>NHẬT KÝ ĐIỆN TỬ</h3>
+            </Row>
+            <Row>
+              <h4>Thanh Niên Tình Nguyện</h4>
+            </Row>
+            <Row>
+              <h4>Thanh Niên Làm Theo Lời Bác</h4>
+            </Row>
+            <Row>
+              <h5>Xã Duy Sơn - Huyện Duy Xuyên - Tỉnh Quảng Nam.</h5>
+            </Row>
           </div>
         </Col>
       </Row>

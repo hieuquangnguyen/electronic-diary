@@ -27,7 +27,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>2023</h3>
                   <h5>Chiến Dịch Phủ Xanh Đồi Trọc.</h5>
                 </Carousel.Caption>
@@ -40,7 +40,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Ngày 01/03/2023</h3>
                   <h5>Tuyên truyền luật Thanh Niên, Luật an ninh mạng.</h5>
                 </Carousel.Caption>
@@ -54,7 +54,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Tháng 3 năm 2023</h3>
                   <h5>Chương Trình Lễ Kết Nghĩa Duy Tân - Duy Sơn - Mỹ Sơn.</h5>
                 </Carousel.Caption>
@@ -67,7 +67,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Tháng 3 năm 2023</h3>
                   <h5>
                     Chương Trình Ngày Hội Đoàn Viên - Trò chơi lớn, Semaphore và
@@ -84,7 +84,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Ngày 24 Tháng 03 Năm 2023</h3>
                   <h5>
                     Chương Trình kết Nạp Đoàn Viên Tại Trường THCS Nguyễn Thành
@@ -100,7 +100,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Tháng 03 Năm 2023</h3>
                   <h5>Đánh cờ Semaphore.</h5>
                 </Carousel.Caption>
@@ -114,7 +114,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Tháng 3/2023</h3>
                   <h5>Chương Trình Vận Động Gửi Người Chiến Sĩ Biên Cương.</h5>
                 </Carousel.Caption>
@@ -128,7 +128,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Tháng 4 Năm 2023</h3>
                   <h5>
                     Chương Trình Bảo Vệ Môi Trường, Thu Pin Cũ Đổi Pin Mới.
@@ -145,7 +145,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Ngày 17 Tháng 04 Năm 2023</h3>
                   <h5>
                     Chương Trình Tuyên Truyền An Toàn Giao Thông Tại Ủy Ban Nhân
@@ -161,7 +161,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Ngày 17 Tháng 04 Năm 2023</h3>
                   <h5>
                     Chương Trình Tuyên Truyền An Toàn Giao Thông Tại Ủy Ban Nhân
@@ -178,7 +178,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Trại Hè 2023</h3>
                   <h5>Chi Đoàn Thôn Kiệu Châu</h5>
                 </Carousel.Caption>
@@ -193,7 +193,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Trại Hè 2023</h3>
                   <h5>Chi Đoàn Thôn Trà Châu</h5>
                 </Carousel.Caption>
@@ -207,7 +207,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Trại hè 2023</h3>
                   <h5>Chi đoàn thôn Trà Kiệu Tây.</h5>
                 </Carousel.Caption>
@@ -223,7 +223,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Trại hè 2023</h3>
                   <h5>Chi Đoàn Thôn Chiêm Sơn.</h5>
                 </Carousel.Caption>
@@ -239,7 +239,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Trại hè 2023</h3>
                   <h5>Chi Đoàn Thôn Phú Nham Đông</h5>
                 </Carousel.Caption>
@@ -254,7 +254,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Trại hè 2023</h3>
                   <h5>Chi Đoàn Thôn Phú Nham.</h5>
                 </Carousel.Caption>
@@ -270,7 +270,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Trại Hè 2023</h3>
                   <h5>Chi Đoàn Thôn Chánh Lộc</h5>
                 </Carousel.Caption>
@@ -283,7 +283,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Tháng 07 Năm 2023</h3>
                   <h5>Chiến Dịch Hoa Phượng Đỏ.</h5>
                 </Carousel.Caption>
@@ -298,7 +298,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Tháng 7/2023</h3>
                   <h5>Tìm Về Địa Chỉ Đỏ.</h5>
                 </Carousel.Caption>
@@ -312,7 +312,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Tháng 8 Năm 2023</h3>
                   <h5>
                     Chương Trình Giao Lưu với Gia Đình Phật Tử Tại Chùa Hòa
@@ -330,7 +330,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Ngày 24 Tháng 08 Năm 2023</h3>
                   <h5>Tổng Kết Chiến Dịch Thanh Niên Tình Nguyện Hè 2023</h5>
                 </Carousel.Caption>
@@ -344,7 +344,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Ngày 07/02/2024</h3>
                   <p>Chương Trình Sinh Hoạt Tiễn Quân Lên Đường Nhập Ngũ.</p>
                 </Carousel.Caption>
@@ -359,7 +359,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3>Tháng 3 Năm 2024</h3>
                   <h5>Mừng Sinh Nhật Đoàn</h5>
                 </Carousel.Caption>
@@ -373,7 +373,7 @@ export default function Home() {
                   height={"400px"}
                   rounded
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className={css.customCaptions}>
                   <h3> Ngày 15 Tháng 3 Năm 2024</h3>
                   <h5>
                     Đại Hội Đại Biểu Hội LHTN Việt Nam xã Duy Sơn lần thứ VI,
@@ -399,22 +399,24 @@ export default function Home() {
                   <Accordion.Body>
                     {" "}
                     <div className={css.contentAccordion}>
-                      <b>Nhật Kí Điện Tử</b> là một nền tảng đoàn xã trực tuyến,
-                      nơi mà mọi người có thể ghi chép, chia sẻ và tương tác với
-                      những kiến thức, thông tin, và trải nghiệm cá nhân của các
-                      bạn. Trang web này được thiết kế ra với mục đích tạo ra
-                      một không gian mở, thân thiện và sáng tạo cho cộng đồng,
-                      nơi mà mỗi cá nhân có thể tự do diễn đạt ý kiến,và kết nối
-                      với nhau qua việc chia sẻ câu chuyện của mình.
+                      <b>Nhật Kí Điện Tử xã Duy Sơn</b> là một nền tảng đoàn xã
+                      trực tuyến, nơi mà mọi người có thể ghi chép, chia sẻ và
+                      tương tác với những kiến thức, thông tin, và trải nghiệm
+                      cá nhân của các bạn. Trang web này được thiết kế ra với
+                      mục đích tạo ra một không gian mở, thân thiện và sáng tạo
+                      cho cộng đồng, nơi mà mỗi cá nhân có thể tự do diễn đạt ý
+                      kiến,và kết nối với nhau qua việc chia sẻ câu chuyện của
+                      mình.
                       <br />
-                      &nbsp;&nbsp;&nbsp;&nbsp; Nhật Kí Điện Tử có giao diện thân
-                      thiện, dễ sử dụng và thân thiện với người dùng. Trang web
-                      được cấu trúc rõ ràng với các phần như Trang chủ, Nhật Kí
-                      Thanh Niên Làm Theo Lời Bác, Nhật Kí Thanh Niên Tình
-                      Nguyện. Nội dung chính của trang web bao gồm các bài viết,
-                      nhật ký cá nhân, hình ảnh. Mục tiêu của Nhật Kí Điện Tử là
-                      tạo ra một cộng đồng trực tuyến năng động, mang lại giá
-                      trị thông tin và tương tác cho mọi thành viên.
+                      &nbsp;&nbsp;&nbsp;&nbsp; Website Nhật Kí Điện Tử này có
+                      giao diện thân thiện, dễ sử dụng và thân thiện với người
+                      dùng. Trang web được cấu trúc rõ ràng với các phần như
+                      Trang chủ, Nhật Kí Thanh Niên Làm Theo Lời Bác, Nhật Kí
+                      Thanh Niên Tình Nguyện. Nội dung chính của trang web bao
+                      gồm các bài viết, nhật ký cá nhân, hình ảnh. Mục tiêu của
+                      Nhật Kí Điện Tử là tạo ra một cộng đồng trực tuyến năng
+                      động, mang lại giá trị thông tin và tương tác cho mọi
+                      thành viên.
                       <br />
                       &nbsp;&nbsp;&nbsp;&nbsp;Trang web cung cấp 2 chức năng hữu
                       ích như Tìm kiếm các bài nhật kí thông qua tiêu đề, và
@@ -436,13 +438,14 @@ export default function Home() {
                         giúp mở rộng mạng lưới quan hệ và học hỏi từ những người
                         khác.
                       </li>
-                      &nbsp;&nbsp;&nbsp;&nbsp;<b>Nhật Kí Điện Tử</b> là một công
-                      cụ quan trọng trong việc ghi chép và chia sẻ thông tin,
-                      kiến thức của mọi người. Việc tham gia vào trang web này
-                      không chỉ là cách tốt nhất để thể hiện bản thân mà còn là
-                      cách để kết nối và học hỏi từ cộng đồng. Chúng tôi khuyến
-                      khích các bạn thanh niên hãy truy cập và sử dụng trang web
-                      để tận hưởng những lợi ích mà nó mang lại.
+                      &nbsp;&nbsp;&nbsp;&nbsp;<b>Nhật Kí Điện Tử xã Duy Sơn</b>{" "}
+                      là một công cụ quan trọng trong việc ghi chép và chia sẻ
+                      thông tin, kiến thức của mọi người. Việc tham gia vào
+                      trang web này không chỉ là cách tốt nhất để thể hiện bản
+                      thân mà còn là cách để kết nối và học hỏi từ cộng đồng.
+                      Chúng tôi khuyến khích các bạn thanh niên hãy truy cập và
+                      sử dụng trang web để tận hưởng những lợi ích mà nó mang
+                      lại.
                     </div>
                   </Accordion.Body>
                 </Accordion.Item>
