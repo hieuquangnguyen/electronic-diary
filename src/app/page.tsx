@@ -17,192 +17,368 @@ export default function Home() {
           <>
             {/* hình ảnh */}
             <Carousel slide={false} className={css.CustomCarousel}>
+              {/* 1 */}
               <Carousel.Item>
                 {/* <ExampleCarouselImage text="First slide" /> */}
                 <Image
-                  src="doan1.png"
+                  src="1.png"
                   className={css.imageCarousel}
                   width={"1200px"}
                   height={"400px"}
                   rounded
                 />
                 <Carousel.Caption>
-                  <h3>First slide label</h3>
-                  <p>
-                    Nulla vitae elit libero, a pharetra augue mollis interdum.
-                  </p>
+                  <h3>2023</h3>
+                  <h5>Chiến Dịch Phủ Xanh Đồi Trọc.</h5>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
                 <Image
-                  src="doan2.png"
+                  src="25.png"
                   className={css.imageCarousel}
                   width={"1200px"}
                   height={"400px"}
                   rounded
                 />
                 <Carousel.Caption>
-                  <h3>Second slide label</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
+                  <h3>Ngày 01/03/2023</h3>
+                  <h5>Tuyên truyền luật Thanh Niên, Luật an ninh mạng.</h5>
+                </Carousel.Caption>
+              </Carousel.Item>
+              {/* 14 */}
+              <Carousel.Item>
+                <Image
+                  src="14.png"
+                  className={css.imageCarousel}
+                  width={"1200px"}
+                  height={"400px"}
+                  rounded
+                />
+                <Carousel.Caption>
+                  <h3>Tháng 3 năm 2023</h3>
+                  <h5>Chương Trình Lễ Kết Nghĩa Duy Tân - Duy Sơn - Mỹ Sơn.</h5>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
                 <Image
-                  src="doan3.png"
+                  src="15.png"
                   className={css.imageCarousel}
                   width={"1200px"}
                   height={"400px"}
                   rounded
                 />
                 <Carousel.Caption>
-                  <h3>Third slide label</h3>
-                  <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
-                  </p>
+                  <h3>Tháng 3 năm 2023</h3>
+                  <h5>
+                    Chương Trình Ngày Hội Đoàn Viên - Trò chơi lớn, Semaphore và
+                    Thi Nấu ăn.
+                  </h5>
                 </Carousel.Caption>
               </Carousel.Item>
+
               <Carousel.Item>
-                {/* <ExampleCarouselImage text="First slide" /> */}
                 <Image
-                  src="doan4.png"
+                  src="17.png"
                   className={css.imageCarousel}
                   width={"1200px"}
                   height={"400px"}
                   rounded
                 />
                 <Carousel.Caption>
-                  <h3>First slide label</h3>
-                  <p>
-                    Nulla vitae elit libero, a pharetra augue mollis interdum.
-                  </p>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <Image
-                  src="doan5.png"
-                  className={css.imageCarousel}
-                  width={"1200px"}
-                  height={"400px"}
-                  rounded
-                />
-                <Carousel.Caption>
-                  <h3>Second slide label</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
+                  <h3>Ngày 24 Tháng 03 Năm 2023</h3>
+                  <h5>
+                    Chương Trình kết Nạp Đoàn Viên Tại Trường THCS Nguyễn Thành
+                    Hãn.
+                  </h5>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
                 <Image
-                  src="thon1.png"
+                  src="18.png"
                   className={css.imageCarousel}
                   width={"1200px"}
                   height={"400px"}
                   rounded
                 />
                 <Carousel.Caption>
-                  <h3>Third slide label</h3>
-                  <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
-                  </p>
+                  <h3>Tháng 03 Năm 2023</h3>
+                  <h5>Đánh cờ Semaphore.</h5>
                 </Carousel.Caption>
               </Carousel.Item>
-              <Carousel.Item>
-                {/* <ExampleCarouselImage text="First slide" /> */}
-                <Image
-                  src="thon2.png"
-                  className={css.imageCarousel}
-                  width={"1200px"}
-                  height={"400px"}
-                  rounded
-                />
-                <Carousel.Caption>
-                  <h3>First slide label</h3>
-                  <p>
-                    Nulla vitae elit libero, a pharetra augue mollis interdum.
-                  </p>
-                </Carousel.Caption>
-              </Carousel.Item>
+
               <Carousel.Item>
                 <Image
-                  src="thon3.png"
+                  src="23.png"
                   className={css.imageCarousel}
                   width={"1200px"}
                   height={"400px"}
                   rounded
                 />
                 <Carousel.Caption>
-                  <h3>Second slide label</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
+                  <h3>Tháng 3/2023</h3>
+                  <h5>Chương Trình Vận Động Gửi Người Chiến Sĩ Biên Cương.</h5>
                 </Carousel.Caption>
               </Carousel.Item>
+              {/* 12 */}
               <Carousel.Item>
                 <Image
-                  src="thon4.png"
+                  src="12.png"
                   className={css.imageCarousel}
                   width={"1200px"}
                   height={"400px"}
                   rounded
                 />
                 <Carousel.Caption>
-                  <h3>Third slide label</h3>
-                  <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
-                  </p>
+                  <h3>Tháng 4 Năm 2023</h3>
+                  <h5>
+                    Chương Trình Bảo Vệ Môi Trường, Thu Pin Cũ Đổi Pin Mới.
+                  </h5>
                 </Carousel.Caption>
               </Carousel.Item>
+
               <Carousel.Item>
                 {/* <ExampleCarouselImage text="First slide" /> */}
                 <Image
-                  src="thon5.png"
+                  src="19.png"
                   className={css.imageCarousel}
                   width={"1200px"}
                   height={"400px"}
                   rounded
                 />
                 <Carousel.Caption>
-                  <h3>First slide label</h3>
-                  <p>
-                    Nulla vitae elit libero, a pharetra augue mollis interdum.
-                  </p>
+                  <h3>Ngày 17 Tháng 04 Năm 2023</h3>
+                  <h5>
+                    Chương Trình Tuyên Truyền An Toàn Giao Thông Tại Ủy Ban Nhân
+                    Dân Xã Duy Sơn.
+                  </h5>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
                 <Image
-                  src="thon6.png"
+                  src="20.png"
                   className={css.imageCarousel}
                   width={"1200px"}
                   height={"400px"}
                   rounded
                 />
                 <Carousel.Caption>
-                  <h3>Second slide label</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
+                  <h3>Ngày 17 Tháng 04 Năm 2023</h3>
+                  <h5>
+                    Chương Trình Tuyên Truyền An Toàn Giao Thông Tại Ủy Ban Nhân
+                    Dân Xã Duy Sơn.
+                  </h5>
+                </Carousel.Caption>
+              </Carousel.Item>
+              {/* 5 */}
+              <Carousel.Item>
+                <Image
+                  src="6.png"
+                  className={css.imageCarousel}
+                  width={"1200px"}
+                  height={"400px"}
+                  rounded
+                />
+                <Carousel.Caption>
+                  <h3>Trại Hè 2023</h3>
+                  <h5>Chi Đoàn Thôn Kiệu Châu</h5>
+                </Carousel.Caption>
+              </Carousel.Item>
+
+              {/* 11 */}
+              <Carousel.Item>
+                <Image
+                  src="11.png"
+                  className={css.imageCarousel}
+                  width={"1200px"}
+                  height={"400px"}
+                  rounded
+                />
+                <Carousel.Caption>
+                  <h3>Trại Hè 2023</h3>
+                  <h5>Chi Đoàn Thôn Trà Châu</h5>
+                </Carousel.Caption>
+              </Carousel.Item>
+              {/* 10 */}
+              <Carousel.Item>
+                <Image
+                  src="10.png"
+                  className={css.imageCarousel}
+                  width={"1200px"}
+                  height={"400px"}
+                  rounded
+                />
+                <Carousel.Caption>
+                  <h3>Trại hè 2023</h3>
+                  <h5>Chi đoàn thôn Trà Kiệu Tây.</h5>
+                </Carousel.Caption>
+              </Carousel.Item>
+
+              {/* 4 */}
+              <Carousel.Item>
+                {/* <ExampleCarouselImage text="First slide" /> */}
+                <Image
+                  src="4.png"
+                  className={css.imageCarousel}
+                  width={"1200px"}
+                  height={"400px"}
+                  rounded
+                />
+                <Carousel.Caption>
+                  <h3>Trại hè 2023</h3>
+                  <h5>Chi Đoàn Thôn Chiêm Sơn.</h5>
+                </Carousel.Caption>
+              </Carousel.Item>
+
+              {/* 13 */}
+              <Carousel.Item>
+                {/* <ExampleCarouselImage text="First slide" /> */}
+                <Image
+                  src="13.png"
+                  className={css.imageCarousel}
+                  width={"1200px"}
+                  height={"400px"}
+                  rounded
+                />
+                <Carousel.Caption>
+                  <h3>Trại hè 2023</h3>
+                  <h5>Chi Đoàn Thôn Phú Nham Đông</h5>
+                </Carousel.Caption>
+              </Carousel.Item>
+
+              {/* 7 */}
+              <Carousel.Item>
+                <Image
+                  src="8.png"
+                  className={css.imageCarousel}
+                  width={"1200px"}
+                  height={"400px"}
+                  rounded
+                />
+                <Carousel.Caption>
+                  <h3>Trại hè 2023</h3>
+                  <h5>Chi Đoàn Thôn Phú Nham.</h5>
+                </Carousel.Caption>
+              </Carousel.Item>
+
+              {/* 6 */}
+              <Carousel.Item>
+                {/* <ExampleCarouselImage text="First slide" /> */}
+                <Image
+                  src="7.png"
+                  className={css.imageCarousel}
+                  width={"1200px"}
+                  height={"400px"}
+                  rounded
+                />
+                <Carousel.Caption>
+                  <h3>Trại Hè 2023</h3>
+                  <h5>Chi Đoàn Thôn Chánh Lộc</h5>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
                 <Image
-                  src="thon8.png"
+                  src="21.png"
                   className={css.imageCarousel}
                   width={"1200px"}
                   height={"400px"}
                   rounded
                 />
                 <Carousel.Caption>
-                  <h3>Third slide label</h3>
-                  <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
-                  </p>
+                  <h3>Tháng 07 Năm 2023</h3>
+                  <h5>Chiến Dịch Hoa Phượng Đỏ.</h5>
+                </Carousel.Caption>
+              </Carousel.Item>
+
+              <Carousel.Item>
+                {/* <ExampleCarouselImage text="First slide" /> */}
+                <Image
+                  src="22.png"
+                  className={css.imageCarousel}
+                  width={"1200px"}
+                  height={"400px"}
+                  rounded
+                />
+                <Carousel.Caption>
+                  <h3>Tháng 7/2023</h3>
+                  <h5>Tìm Về Địa Chỉ Đỏ.</h5>
+                </Carousel.Caption>
+              </Carousel.Item>
+
+              <Carousel.Item>
+                <Image
+                  src="9.png"
+                  className={css.imageCarousel}
+                  width={"1200px"}
+                  height={"400px"}
+                  rounded
+                />
+                <Carousel.Caption>
+                  <h3>Tháng 8 Năm 2023</h3>
+                  <h5>
+                    Chương Trình Giao Lưu với Gia Đình Phật Tử Tại Chùa Hòa
+                    Quang.
+                  </h5>
+                </Carousel.Caption>
+              </Carousel.Item>
+              {/* 9 */}
+              <Carousel.Item>
+                {/* <ExampleCarouselImage text="First slide" /> */}
+                <Image
+                  src="16.png"
+                  className={css.imageCarousel}
+                  width={"1200px"}
+                  height={"400px"}
+                  rounded
+                />
+                <Carousel.Caption>
+                  <h3>Ngày 24 Tháng 08 Năm 2023</h3>
+                  <h5>Tổng Kết Chiến Dịch Thanh Niên Tình Nguyện Hè 2023</h5>
+                </Carousel.Caption>
+              </Carousel.Item>
+
+              <Carousel.Item>
+                <Image
+                  src="24.png"
+                  className={css.imageCarousel}
+                  width={"1200px"}
+                  height={"400px"}
+                  rounded
+                />
+                <Carousel.Caption>
+                  <h3>Ngày 07/02/2024</h3>
+                  <p>Chương Trình Sinh Hoạt Tiễn Quân Lên Đường Nhập Ngũ.</p>
+                </Carousel.Caption>
+              </Carousel.Item>
+
+              {/* 2 */}
+              <Carousel.Item>
+                <Image
+                  src="3.png"
+                  className={css.imageCarousel}
+                  width={"1200px"}
+                  height={"400px"}
+                  rounded
+                />
+                <Carousel.Caption>
+                  <h3>Tháng 3 Năm 2024</h3>
+                  <h5>Mừng Sinh Nhật Đoàn</h5>
+                </Carousel.Caption>
+              </Carousel.Item>
+              {/* 3 */}
+              <Carousel.Item>
+                <Image
+                  src="5.png"
+                  className={css.imageCarousel}
+                  width={"1200px"}
+                  height={"400px"}
+                  rounded
+                />
+                <Carousel.Caption>
+                  <h3> Ngày 15 Tháng 3 Năm 2024</h3>
+                  <h5>
+                    Đại Hội Đại Biểu Hội LHTN Việt Nam xã Duy Sơn lần thứ VI,
+                    Nhiệm kì 2024 - 2029
+                  </h5>
                 </Carousel.Caption>
               </Carousel.Item>
             </Carousel>
@@ -392,7 +568,6 @@ export default function Home() {
                     <br />
                     <br />
                     <strong>
-                      {" "}
                       Bước 3: Ban tổ chức sẽ xác nhận hoặc feedback bài viết của
                       bạn trong 24h trước khi bài viết được đăng lên trang web
                       này để chia sẻ ra cộng đồng.
