@@ -79,7 +79,7 @@ const NKTinhNguyen: React.FC = () => {
 
   function getPostUrl(postId: string) {
     const baseUrl =
-      "https://nhat-ki-dien-tu-thanh-nien.vercel.app/TNLamTheoLoiBac";
+      "https://nhat-ki-dien-tu-thanh-nien.vercel.app/TNTinhNguyen";
     return `${baseUrl}?postId=${postId}`; // Append post ID to the URL
   }
 
