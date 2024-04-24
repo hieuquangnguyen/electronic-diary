@@ -567,7 +567,12 @@ export default function Home() {
                       Bước 2: Quay lại đây và click vào link dưới đây để có thể
                       nộp bài về Ban Tổ Chức.
                     </strong>
-                    <Link href="#">Click vào đây.</Link>
+                    <Link
+                      href="http://getty.vn/NhatKiDuySonFormDangKi"
+                      target="_blank"
+                    >
+                      <b> Click vào đây.</b>
+                    </Link>
                     <br />
                     <br />
                     <strong>
