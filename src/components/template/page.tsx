@@ -168,12 +168,12 @@ export default function Template({ children }: { children: React.ReactNode }) {
                 </Link>
               </div>
               <div className={css.contentMenuFooter}>
-                <Link href="/NKTNLamTheoLoiBac" className={css.menuF}>
+                <Link href="/TNLamTheoLoiBac" className={css.menuF}>
                   Thanh Niên Làm Theo Lời Bác
                 </Link>
               </div>
               <div className={css.contentMenuFooter}>
-                <Link href="/NKTNTinhNguyen" className={css.menuF}>
+                <Link href="/TNTinhNguyen" className={css.menuF}>
                   Thanh Niên Tình Nguyện
                 </Link>
               </div>
