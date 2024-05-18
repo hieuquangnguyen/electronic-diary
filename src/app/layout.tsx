@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Nhật Kí Điện Tử",
+  title: "Nhật Kí Điện Tử - Duy Sơn",
   description: "Sổ Nhật Kí Điện Tử Thanh Niên Duy Sơn",
 };
 
