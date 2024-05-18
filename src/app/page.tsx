@@ -409,14 +409,13 @@ export default function Home() {
                       mình.
                       <br />
                       &nbsp;&nbsp;&nbsp;&nbsp; Website Nhật Kí Điện Tử này có
-                      giao diện thân thiện, dễ sử dụng và thân thiện với người
-                      dùng. Trang web được cấu trúc rõ ràng với các phần như
-                      Trang chủ, Nhật Kí Thanh Niên Làm Theo Lời Bác, Nhật Kí
-                      Thanh Niên Tình Nguyện. Nội dung chính của trang web bao
-                      gồm các bài viết, nhật ký cá nhân, hình ảnh. Mục tiêu của
-                      Nhật Kí Điện Tử là tạo ra một cộng đồng trực tuyến năng
-                      động, mang lại giá trị thông tin và tương tác cho mọi
-                      thành viên.
+                      giao diện dễ sử dụng và thân thiện với người dùng. Trang
+                      web được cấu trúc rõ ràng với các trang như Trang chủ, Nhật
+                      Kí Thanh Niên Làm Theo Lời Bác, Nhật Kí Thanh Niên Tình
+                      Nguyện. Nội dung chính của trang web bao gồm các bài viết,
+                      nhật ký cá nhân, hình ảnh. Mục tiêu của Nhật Kí Điện Tử là
+                      tạo ra một cộng đồng trực tuyến năng động, mang lại giá
+                      trị thông tin và tương tác cho mọi thành viên.
                       <br />
                       &nbsp;&nbsp;&nbsp;&nbsp;Trang web cung cấp 2 chức năng hữu
                       ích như Tìm kiếm các bài nhật kí thông qua tiêu đề, và
